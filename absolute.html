@@ -1,0 +1,68 @@
+<!-- PDF 3.14 -->
+
+<style>
+    body {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    p {
+        background-color: rgb(207, 232, 220);
+        border: 2px solid rgb(79, 185, 227);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .abs {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background-color: rgba(255, 84, 104, .3)
+    }
+
+    div {
+        width: 100%;
+        height: 100px;
+        background-color: antiquewhite;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        /* text-align: center; : <h1>absolute 적용</h1> 가운데 정렬 */
+    }
+
+    /* static이 아닌 부모 위치를 기준으로 absolute가 적용 */
+    /* div를 기준으로 하고싶으면 div에 static이 아닌 position을 줘야함 */
+    a {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    div>h1 {
+        display: inline-block;
+        margin-left: 35%;
+
+    }
+
+    b {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+
+<body>
+    <h1>absolute 적용</h1>
+    <p>static</p>
+    <p class='abs'>absolute</p>
+    <!-- position을 absolute로 설정하는 순간 아래의 static은 absolute가 존재하지 않는걸로 인식함 -->
+    <p>static</p>
+    <div>
+        <a>링크</a>
+        <b>링크</b>
+        <h1>absolute 적용</h1>
+    </div>
+    <p>static</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>

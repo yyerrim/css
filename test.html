@@ -1,0 +1,26 @@
+<!-- 위치는 상관없지만 보통은 제일 위에 씀 -->
+<style>
+    /* 태그 선택자 : 오타가 있거나 잘못된걸 표현하면 선택 안됨 */
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua !important;
+        /* 태그에 직접 적용하더라도 !important 쓰면 우선순위 높아짐 */
+
+        /* 늦게 작성된 코드가 우선순위가 높게 작용되는 경우가 많음 */
+        background-color: red !important;
+
+        /* 모서리 둥글게 */
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div></div>
+
+    <!-- 위에서 만들어놨기 때문에 뒤에 하나 더 넣어도 적용됨 -->
+    <div></div>
+
+    <!-- 태그에 직접 적용하면 우선순위 높아짐 -->
+    <div style="background-color: yellow;"></div>
+</body>

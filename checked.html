@@ -1,0 +1,60 @@
+<!-- PDF 1.24 -->
+
+<style>
+    input+span {
+        display: none;
+    }
+
+    /* 버그 생김 */
+    input:checked~span {
+        display: none;
+    }
+
+    input:checked+span {
+        display: inline-block;
+    }
+
+    /* input:checked+span+span {
+        display: none;
+    } */
+</style>
+
+<body>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+    <hr>
+    <input type="checkbox">
+    <span style="color:green;">선택O</span>
+    <span style="color: red;">선택X</span>
+</body>
+
+<hr>
+<!-- PDF 1.25 -->
+
+<style>
+    a {
+        transition: 1.5s;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        background-color: gold;
+    }
+
+    a:active {
+        background-color: aqua;
+    }
+
+    a:visited {
+        opacity: 0.7;
+        color: gray;
+    }
+</style>
+
+<body>
+    <a href="http://ggoreb.com">
+        이 링크를 가리켜보세요.
+    </a>
+</body>

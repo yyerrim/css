@@ -1,0 +1,42 @@
+<!-- PDF 1.11 -->
+
+<style>
+    * {
+        font-weight: bold;
+    }
+
+    /* 속성이 하나만 있을때는 세미콜론을 꼭 넣지는 않아도 되지만 넣는걸 권장함 */
+
+    .bg {
+        background-color: yellow;
+    }
+
+    p {
+        color: blue;
+    }
+
+    span {
+        color: magenta;
+    }
+</style>
+
+<body>
+    <p>selector</p>
+    <ul>
+        <li class='bg'>
+            <p>tag</p>
+        </li>
+        <li class='bg'><span>class</span></li>
+        <li>
+            <p>id</p>
+        </li>
+        <li><span>attribute</span></li>
+        <li>
+            <p>descendant / child</p>
+        </li>
+        <li><span>siblings / adjacent</span></li>
+        <li>
+            <p>pseudo</p>
+        </li>
+    </ul>
+</body>

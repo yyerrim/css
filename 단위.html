@@ -1,0 +1,71 @@
+<!-- PDF 2.3 -->
+
+<style>
+    .em li {
+        font-size: 2rem;
+    }
+    /* 2em : 자식으로 내려갈때마다 2배씩 증가 16 -> 32 -> 64 -> ... */
+    /* 2rem : 브라우저기준(16)에서 2배 증가 32  - 더 많이 사용 */
+    /* 50% : 전체 크기에서 50% */
+
+    body>div {
+        width: 100%;
+        height: 50%;
+        background-color: aquamarine;
+    }
+
+    div>div {
+        /* 부모크기 기준에서 % 적용됨 */
+        width: 50%;
+        height: 50%;
+        background-color: beige;
+
+        /* 부모크기와 상관없이 브라우저 크기 따라감
+        width: 100vw;
+        height: 50%;
+        background-color: beige; */
+    }
+
+    /* 기본 여백 사라짐
+    * {
+        margin: 0;
+        padding: 0;
+    } */
+</style>
+
+<!-- 가로 스크롤 나오는 이유 : 가로의 내용물이 브라우저 창 크기를 벗어나고 있어서 나옴
+    1. 크기를 100%로 설정해도 브라우저마다 기본적인 여백이 있다보니 그 여백만큼 벗어나게 됨 
+    2. 생기는 세로 스크롤이 차지하는 공간만큼 가로 스크롤 생성 -->
+
+<body>
+    <ul class="em">
+        <li>One</li>
+        <li>Two
+            <ul>
+                <li>Two A</li>
+                <li>Two B<ul>
+                        <li>Two B 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="rem">
+        <li>One</li>
+        <li>Two
+            <ul>
+                <li>Two A</li>
+                <li>Two B<ul>
+                        <li>Two B 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div> <!-- 부모 -->
+        <div> <!-- 자식 -->
+
+        </div>
+    </div>
+</body>
